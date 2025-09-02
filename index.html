@@ -1,0 +1,52 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+
+<main class="main">
+    <link rel="stylesheet" href="../static/main/css/main.css">
+
+    <div class="row">
+        <div class="column">
+            <h2></h2>
+            <img src="../static/main/images/profile_pic.jpg" alt="pic" loading="lazy">
+        </div>
+
+        <div class="column">
+            <h2>About me</h2>
+            <p class="text">I am <strong>Pham Hoang Duy</strong>, a junior Computer Science student at Michigan State University with a
+                strong foundation in software development, algorithm engineering, and cloud computing. My coursework in
+                Object-Oriented Software Development, Computer Architecture, and Algorithm Engineering has strengthened
+                my problem-solving skills and technical expertise. I am proficient in Java, Python, C++, SQL, and
+                JavaScript, with experience in backend development, REST API design, and microservice architecture.
+                Additionally, my ability to learn quickly and collaborate effectively has enabled me to excel in both
+                academic and professional settings.
+            </p>
+            <p class="text">
+                During my internship at Techcom Securities, I worked as an Application Developer, contributing to the
+                development of a margin loan product that improved financial accessibility. I built and optimized REST
+                APIs using Java and PostgreSQL, implemented backend services with Maven and Docker, and collaborated
+                with cross-functional teams using Git and Jira. My role required troubleshooting complex issues,
+                optimizing data processing, and ensuring secure and scalable software solutions, all of which
+                strengthened my backend development expertise.
+            </p>
+            <p class="text">
+                Beyond my professional experience, I have worked on several projects, including a Microservice
+                Application that serves as a document management system. This project involved developing Flask-based
+                microservices, designing SQLite databases, and implementing JWT-based authentication for secure data
+                handling. Additionally, I collaborated on a Unity 3D fighting game, where I focused on game physics,
+                collision detection, and dynamic character movement. These projects have enhanced my ability to design,
+                develop, and optimize scalable applications, and I am eager to bring this experience to innovative
+                real-world challenges. Passionate about problem-solving and innovation, I am eager to apply my technical skills to impactful
+                and dynamic environments.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <p class="text">
+        <strong style="font-size: 20px">A fun fact about me:</strong>
+        <b>{{fun_fact}}</b>
+    </p>
+
+</main>
+
+{% endblock %}
