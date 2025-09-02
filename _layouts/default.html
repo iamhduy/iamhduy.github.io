@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{title}}</title>
+  <title>{{ page.title }}</title>
   <link rel="shortcut icon" href={{icon_file}}>
     <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/main.css') }}">
     {% block extracss %}{% endblock %}
@@ -27,12 +27,6 @@
             <a href="home"> Home </a>
             <a href="project"> Projects </a>
             <a href="resume"> Resume </a>
-            {% if 'email' in session %}
-                <a href="/chat">Chat</a>
-                <a href="/logout">Logout</a>
-            {% else %}
-                <a href="/login">Login</a>
-            {% endif %}
             <a href="https://www.linkedin.com/in/hduy2510/" target="_blank">
                 <img src="../../static/main/images/social-linkedin.png" alt="lkd page">
             </a>
@@ -44,12 +38,6 @@
             <a href="home"> Home </a>
             <a href="project"> Projects </a>
             <a href="resume"> Resume </a>
-            {% if 'email' in session %}
-                <a href="/chat">Chat</a>
-                <a href="/logout">Logout</a>
-            {% else %}
-                <a href="/login">Login</a>
-            {% endif %}
             <a href="https://www.linkedin.com/in/hduy2510/" target="_blank"> Linkedln </a>
         </div>
     </nav>
@@ -58,7 +46,7 @@
 
     <!-- The main content  -->
     <main>
-      {% block maincontent %}{% endblock %}
+      {{ content }}
     </main>
 
     <!-- The footer of the file -->
