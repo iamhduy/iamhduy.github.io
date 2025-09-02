@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.feedback-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.feedback-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}

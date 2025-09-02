@@ -1,0 +1,151 @@
+main {
+    margin: 0 10%;
+    font-family: helvetica, serif;
+}
+
+.main {
+}
+
+.main img {
+    image-resolution: from-image;
+    width: 96%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column-f {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.column p {
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.row {
+    overflow-x: hidden;
+    max-height: 50vh;
+    max-width: 80vw;
+    margin: 0 auto;
+    overflow-y: auto;
+    border: none;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #000000;
+    height: 1px;
+    border: none;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#feedbackForm {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background: #87cceb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    border: 2px #000000 solid;
+    color: #000000;
+}
+
+#feedbackButton {
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    background: #007BFF;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#closeFeedback {
+    background: none;
+    color: #000000;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+#closeFeedback:hover {
+    background: #ff4500;
+    color: #ffffff;
+}
+
+#feedbackButton:hover {
+    opacity: 0.7;
+}
+
+#loginStatus {
+    color: red;
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form-row label {
+    width: 20%; /* fixed width for label */
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        max-width: 80vw;
+        width: 100%;
+    }
+
+    .row {
+        border: none;
+        overflow: visible;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.2;
+        padding: 15px;
+    }
+}
